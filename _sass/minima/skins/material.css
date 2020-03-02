@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+// Material skin
+// ==============
+// Created by Neko Boi Nick <mailto:nekoboinick@gmail.com> using the Solarized
+// color scheme by Ali Naderi <https://github.com/naderi/material-theme-for-npp/>.
+
+// This style sheet implements two options for the minima.skin setting:
+// "material" for light mode and "material-dark" for dark mode.
+$mat-is-dark: false !default;
+
+
+// Color scheme
+// ------------
+// The inline comments show the canonical H*S*B values for each color.
+
+$mat-base03:   #212121;  // 00  00  13
+$mat-base02:   #2E2E2E;  // 00  00  18
+$mat-base01:   #EEFFFF;  //180  07 100
+$mat-base00:   #212121;  // 00  00  13
+$mat-base0:    #878787;  // 00  00  53
+$mat-base1:    #EEFFFF;  //180  07 100
+$mat-base2:    #2E2E2E;  // 00  00  18
+$mat-base3:    #212121;  // 00  00  13
+$mat-yellow:   #b58900;  // 60  10  65
+$mat-orange:   #cb4b16;  // 50  50  55
+$mat-red:      #dc322f;  // 50  65  45
+$mat-magenta:  #d33682;  // 50  65 -05
+$mat-violet:   #6c71c4;  // 50  15 -45
+$mat-blue:     #B2CCD6;  //197  17  84
+$mat-cyan:     #2aa198;  // 60 -35 -05
+$mat-green:    #859900;  // 60 -20  65
+
+$mat-mono3:    $mat-base3;
+$mat-mono2:    $mat-base2;
+$mat-mono1:    $mat-base1;
+$mat-mono00:   $mat-base00;
+$mat-mono01:   $mat-base01;
+
+@if $mat-is-dark {
+  $mat-mono3:  $mat-base03;
+  $mat-mono2:  $mat-base02;
+  $mat-mono1:  $mat-base01;
+  $mat-mono00: $mat-base0;
+  $mat-mono01: $mat-base1;
+}
+
+
+// Minima color variables
+// ----------------------
+
+$brand-color:           $mat-mono1 !default;
+$brand-color-light:     mix($sol-mono1, $mat-mono3) !default;
+$brand-color-dark:      $mat-mono00 !default;
+
+$text-color:            $mat-mono01 !default;
+$background-color:      $mat-mono3 !default;
+$code-background-color: $mat-mono2 !default;
+
+$link-base-color:       $mat-blue !default;
+$link-visited-color:    mix($sol-blue, $mat-mono00) !default;
+
+$table-text-color:      $mat-mono00 !default;
+$table-zebra-color:     mix($sol-mono2, $mat-mono3) !default;
+$table-header-bg-color: $mat-mono2 !default;
+$table-header-border:   $mat-mono1 !default;
+$table-border-color:    $mat-mono1 !default;
+
+
+// Syntax highlighting styles
+// --------------------------
+
+.highlight {
+  .c     { color: $mat-mono1; font-style: italic } // Comment
+  .err   { color: $mat-red } // Error
+  .k     { color: $mat-mono01; font-weight: bold } // Keyword
+  .o     { color: $mat-mono01; font-weight: bold } // Operator
+  .cm    { color: $mat-mono1; font-style: italic } // Comment.Multiline
+  .cp    { color: $mat-mono1; font-weight: bold } // Comment.Preproc
+  .c1    { color: $mat-mono1; font-style: italic } // Comment.Single
+  .cs    { color: $mat-mono1; font-weight: bold; font-style: italic } // Comment.Special
+  .gd    { color: $mat-red } // Generic.Deleted
+  .gd .x { color: $mat-red } // Generic.Deleted.Specific
+  .ge    { color: $mat-mono00; font-style: italic } // Generic.Emph
+  .gr    { color: $mat-red } // Generic.Error
+  .gh    { color: $mat-mono1 } // Generic.Heading
+  .gi    { color: $mat-green } // Generic.Inserted
+  .gi .x { color: $mat-green } // Generic.Inserted.Specific
+  .go    { color: $mat-mono00 } // Generic.Output
+  .gp    { color: $mat-mono00 } // Generic.Prompt
+  .gs    { color: $mat-mono01; font-weight: bold } // Generic.Strong
+  .gu    { color: $mat-mono1 } // Generic.Subheading
+  .gt    { color: $mat-red } // Generic.Traceback
+  .kc    { color: $mat-mono01; font-weight: bold } // Keyword.Constant
+  .kd    { color: $mat-mono01; font-weight: bold } // Keyword.Declaration
+  .kp    { color: $mat-mono01; font-weight: bold } // Keyword.Pseudo
+  .kr    { color: $mat-mono01; font-weight: bold } // Keyword.Reserved
+  .kt    { color: $mat-violet; font-weight: bold } // Keyword.Type
+  .m     { color: $mat-cyan } // Literal.Number
+  .s     { color: $mat-magenta } // Literal.String
+  .na    { color: $mat-cyan } // Name.Attribute
+  .nb    { color: $mat-blue } // Name.Builtin
+  .nc    { color: $mat-violet; font-weight: bold } // Name.Class
+  .no    { color: $mat-cyan } // Name.Constant
+  .ni    { color: $mat-violet } // Name.Entity
+  .ne    { color: $mat-violet; font-weight: bold } // Name.Exception
+  .nf    { color: $mat-blue; font-weight: bold } // Name.Function
+  .nn    { color: $mat-mono00 } // Name.Namespace
+  .nt    { color: $mat-blue } // Name.Tag
+  .nv    { color: $mat-cyan } // Name.Variable
+  .ow    { color: $mat-mono01; font-weight: bold } // Operator.Word
+  .w     { color: $mat-mono1 } // Text.Whitespace
+  .mf    { color: $mat-cyan } // Literal.Number.Float
+  .mh    { color: $mat-cyan } // Literal.Number.Hex
+  .mi    { color: $mat-cyan } // Literal.Number.Integer
+  .mo    { color: $mat-cyan } // Literal.Number.Oct
+  .sb    { color: $mat-magenta } // Literal.String.Backtick
+  .sc    { color: $mat-magenta } // Literal.String.Char
+  .sd    { color: $mat-magenta } // Literal.String.Doc
+  .s2    { color: $mat-magenta } // Literal.String.Double
+  .se    { color: $mat-magenta } // Literal.String.Escape
+  .sh    { color: $mat-magenta } // Literal.String.Heredoc
+  .si    { color: $mat-magenta } // Literal.String.Interpol
+  .sx    { color: $mat-magenta } // Literal.String.Other
+  .sr    { color: $mat-green } // Literal.String.Regex
+  .s1    { color: $mat-magenta } // Literal.String.Single
+  .ss    { color: $mat-magenta } // Literal.String.Symbol
+  .bp    { color: $mat-mono1 } // Name.Builtin.Pseudo
+  .vc    { color: $mat-cyan } // Name.Variable.Class
+  .vg    { color: $mat-cyan } // Name.Variable.Global
+  .vi    { color: $mat-cyan } // Name.Variable.Instance
+  .il    { color: $mat-cyan } // Literal.Number.Integer.Long
+}
