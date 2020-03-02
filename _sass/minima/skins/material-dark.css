@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+$mat-is-dark: true;
+@import "minima/skins/material";
