@@ -2,3 +2,6 @@ theme: minima
 title: Neko Boi Nick
 description: Portfolio
 show_downloads: false
+
+minima:
+  skin: sunrise
