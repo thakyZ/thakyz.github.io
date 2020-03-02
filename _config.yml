@@ -1,5 +1,5 @@
 remote_theme: thakyZ/minima
-title: Neko Boi Nick
+title: ***REMOVED***
 description: Portfolio
 show_downloads: false
 
@@ -12,6 +12,10 @@ minima:
 header_pages:
   - index.md
   - portfolio.md
+
+author:
+  name: ***REMOVED***
+  email: "nekoboinick@gmail.com"
 
 plugins:
   - jekyll-remote-theme
