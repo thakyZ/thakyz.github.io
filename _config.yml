@@ -4,7 +4,7 @@ description: Portfolio
 show_downloads: false
 
 minima:
-  skin: solarized-dark
+  skin: material
 
 minima:
   date_format: "%b %-d, %Y"
