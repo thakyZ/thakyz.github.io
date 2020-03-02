@@ -1,4 +1,4 @@
-theme: minima
+remote_theme: jekyll/minima
 title: Neko Boi Nick
 description: Portfolio
 show_downloads: false
@@ -13,3 +13,5 @@ header_pages:
   - index.md
   - portfolio.md
 
+plugins:
+  - jekyll-remote-theme
