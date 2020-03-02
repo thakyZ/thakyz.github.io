@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/skins/{{ site.minima.skin | default: 'solarized-dark' }}";
 @import "minima/initialize";
 
 /*body {
