@@ -50,7 +50,7 @@ $mat-mono01:   $mat-base01;
 // ----------------------
 
 $brand-color:           $mat-mono1 !default;
-$brand-color-light:     mix($sol-mono1, $mat-mono3) !default;
+$brand-color-light:     mix($mat-mono1, $mat-mono3) !default;
 $brand-color-dark:      $mat-mono00 !default;
 
 $text-color:            $mat-mono01 !default;
@@ -58,10 +58,10 @@ $background-color:      $mat-mono3 !default;
 $code-background-color: $mat-mono2 !default;
 
 $link-base-color:       $mat-blue !default;
-$link-visited-color:    mix($sol-blue, $mat-mono00) !default;
+$link-visited-color:    mix($mat-blue, $mat-mono00) !default;
 
 $table-text-color:      $mat-mono00 !default;
-$table-zebra-color:     mix($sol-mono2, $mat-mono3) !default;
+$table-zebra-color:     mix($mat-mono2, $mat-mono3) !default;
 $table-header-bg-color: $mat-mono2 !default;
 $table-header-border:   $mat-mono1 !default;
 $table-border-color:    $mat-mono1 !default;
