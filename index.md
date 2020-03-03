@@ -1,4 +1,8 @@
-## About
+---
+layout: page
+title: About
+permalink: /about/
+---
 
 Hi I am Nick "Neko Boi" ***REMOVED***. I am a 22 year old programmer from ***REMOVED*** in the United States. I have recently been working on a lot of mods for different games, and some applications like tools and utilities for daily use on the a computer.   
 I have a background in Linux server administration and I have a rather large background with programming in C# and have gone to school for Video Game Design and Programming, at ***REMOVED*** Tech Skills Center, in ***REMOVED***, ***REMOVED***.
