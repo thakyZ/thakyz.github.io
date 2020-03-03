@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /
 ---
 
 Hi I am Nick "Neko Boi" ***REMOVED***. I am a 22 year old programmer from ***REMOVED*** in the United States. I have recently been working on a lot of mods for different games, and some applications like tools and utilities for daily use on the a computer.   
