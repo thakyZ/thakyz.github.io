@@ -10,7 +10,7 @@ minima:
   date_format: "%b %-d, %Y"
 
 header_pages:
-  - index.md
+  - about.md
   - gallery.md
   - portfolio.md
 
