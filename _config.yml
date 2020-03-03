@@ -1,22 +1,46 @@
-remote_theme: thakyZ/minima
 title: ***REMOVED***
-description: Portfolio
-show_downloads: false
-
-minima:
-  skin: material
-
-minima:
-  date_format: "%b %-d, %Y"
-
-header_pages:
-  - about.md
-  - gallery.md
-  - portfolio.md
 
 author:
   name: ***REMOVED***
   email: "nekoboinick@gmail.com"
 
+description: > # this means to ignore newlines until "show_excerpts:"
+  ***REMOVED***'s portfolio for carrier exploration after and during college.
+  Nick is studying Information Technology, specifically Linux Server
+  Administration. Please contact him if you are interested in some form of
+  Carrier for him in the field he is studying for.
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+minima:
+  # Minima skin setting
+  skin: material-dark
+
+  # Minima date format
+  date_format: "%b %-d, %Y"
+  
+  # Generate social links in footer
+  social_links:
+    twitter: thakyZ
+    github: thakyZ
+    
+    # GitLab Instances
+    gitlab:
+    - username: thakyZ
+      instance: gitlab.com
+    - username: thakyZ
+      instance: git.nekogaming.xyz
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+ - about.md
+ - gallery.md
+ - portfolio.md
+
+# Build settings
+remote_theme: thakyZ/minima
+
 plugins:
-  - jekyll-remote-theme
+ - jekyll-feed
+ - jekyll-remote-theme
